@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logo-img:hover{
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* .cover-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+} */
+
+.shop-name{
+    font-weight: bold;
+    font-size: 24px;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(270deg, #8e2de2, #4a00e0, #ff4ecd);
+    background-size: 600% 600%;
+    animation: gradientShift 12s ease infinite;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: purple;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -10px;
+}
+.sidebar ul li {
+    margin: 15px 0;
+    font-size: 18px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    color: white;
+    background: linear-gradient(135deg, #ff4ecd, #fdafe7, #e904a8);              
+    transform: scale(1.05);
+    width: 100%;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 40px 20px;
+    min-height: 100vh;
+    background-image: url('/images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.6);
+    z-index: -1;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.main-content .title {
+    margin-top: -10px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.table{
+    width: 99%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    text-align: center;
+}   
+.table th {
+    font-weight: bold;
+    font-size: 20px;
+}
+.table td {
+    border: 1px solid rgba(207, 194, 194, 0.2);
+    font-size: 18px;
+}
+.products-header {
+    background-color: #e904a8;
+    color: #fff;
+}
+
+.categories-header {
+    background-color: #4a00e0;
+    color: #fff;
+}
+
+.edit-btn{
+    background-color: #4a00e0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+        background-color: #6724ec;
+        transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #e904a8;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #d0026f;
+    transform: scale(1.05);
+}
+
+.report-section{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    height: 140px;
+}
+
+.report-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.report-button {
+    background-color: #4a00e0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.report-button:hover {
+    background-color: #6724ec;
+    transform: scale(1.05);
+}

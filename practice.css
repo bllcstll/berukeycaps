@@ -1,0 +1,80 @@
+body {
+    color: black;
+    background-color: white;
+    font:italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    border: 2px solid black;
+    padding: 2px;
+    margin: 10px;
+}
+
+button{
+    display: flex;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    height: 50px;
+    width: 70px;
+}
+
+button:hover{
+    display: flex;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    height: 50px;
+    width: 70px;
+}
+
+table{
+    border-spacing: 30px;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    border-color: red;
+    padding: 15px;
+}
+tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+tr:hover{
+    background-color: black;
+}
+
+/* to be study */
+/* th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+} */
+
+
+.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+.mycontainer div {
+  width:33%;
+  float: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
